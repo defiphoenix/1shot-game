@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="BowHand hand tracking archery thumbnail">
+  <defs>
+    <linearGradient id="bh-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#1a1a2e"/>
+      <stop offset="1" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#bh-sky)"/>
+  <g fill="#a0c4ff" opacity="0.7">
+    <circle cx="120" cy="80" r="3"/>
+    <circle cx="300" cy="46" r="2"/>
+    <circle cx="520" cy="90" r="2.5"/>
+    <circle cx="840" cy="60" r="3"/>
+    <circle cx="700" cy="130" r="2"/>
+    <circle cx="180" cy="170" r="2"/>
+  </g>
+  <ellipse cx="480" cy="560" rx="560" ry="90" fill="#1f2d4a"/>
+  <ellipse cx="480" cy="580" rx="560" ry="80" fill="#24365a"/>
+
+  <!-- target -->
+  <g transform="translate(730 300)">
+    <rect x="-12" y="96" width="24" height="120" fill="#4b3b2f"/>
+    <circle r="112" fill="#f4f0e6"/>
+    <circle r="86" fill="#e94560"/>
+    <circle r="60" fill="#f4f0e6"/>
+    <circle r="34" fill="#e94560"/>
+    <circle r="12" fill="#ffd76a"/>
+  </g>
+
+  <!-- bow and arrow -->
+  <g transform="translate(240 300)">
+    <path d="M46 -170 Q150 0 46 170" fill="none" stroke="#c98b4e" stroke-width="18" stroke-linecap="round"/>
+    <path d="M46 -170 L-58 0 L46 170" fill="none" stroke="#f4f0e6" stroke-width="5"/>
+    <line x1="-58" y1="0" x2="196" y2="0" stroke="#a0c4ff" stroke-width="9" stroke-linecap="round"/>
+    <path d="M196 0 L162 -18 L162 18 Z" fill="#e94560"/>
+    <path d="M-58 0 L-92 -20 M-58 0 L-92 20 M-58 0 L-98 0" stroke="#e94560" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- tracking hand: fist drawing the string -->
+  <g transform="translate(150 300)">
+    <circle r="46" fill="#ffb98a"/>
+    <path d="M-46 8 Q-58 0 -46 -10" fill="none" stroke="#d98a55" stroke-width="7" stroke-linecap="round"/>
+    <g fill="none" stroke="#d98a55" stroke-width="6" stroke-linecap="round">
+      <path d="M-12 -34 v20"/>
+      <path d="M8 -36 v22"/>
+      <path d="M26 -30 v18"/>
+    </g>
+    <g fill="none" stroke="#4cf0a8" stroke-width="3" opacity="0.85">
+      <circle r="62"/>
+      <circle r="74" opacity="0.4"/>
+    </g>
+    <g fill="#4cf0a8">
+      <circle cx="0" cy="-62" r="5"/>
+      <circle cx="62" cy="0" r="5"/>
+      <circle cx="0" cy="62" r="5"/>
+      <circle cx="-62" cy="0" r="5"/>
+    </g>
+  </g>
+
+  <!-- arrow flight hint -->
+  <g stroke="#a0c4ff" stroke-width="5" stroke-linecap="round" opacity="0.5">
+    <path d="M470 285 h48"/>
+    <path d="M545 292 h34"/>
+    <path d="M600 297 h20"/>
+  </g>
+</svg>

@@ -22,6 +22,11 @@ const staticApps = [
     name: "infinite-stairs",
     source: "games/infinite-stairs",
     target: "dist/games/infinite-stairs"
+  },
+  {
+    name: "bowhand",
+    source: "games/bowhand",
+    target: "dist/games/bowhand"
   }
 ];
 

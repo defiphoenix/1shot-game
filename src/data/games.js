@@ -1,6 +1,7 @@
 import footballThumb from "../assets/thumbnails/sakura-football.svg";
 import pagodaThumb from "../assets/thumbnails/pagoda-rpg.svg";
 import easternClashThumb from "../assets/thumbnails/eastern-clash.svg";
+import bowhandThumb from "../assets/thumbnails/bowhand.svg";
 
 export const games = [
   {
@@ -79,5 +80,16 @@ export const games = [
     accent: "#3a76d6",
     secondary: "#c9cdd4",
     stat: "∞ stairs"
+  },
+  {
+    id: "bowhand",
+    title: "BowHand",
+    deck: "핸드트래킹 양궁",
+    detail: "웹캠 앞에서 주먹으로 시위를 당기고 손을 펴서 화살을 쏘는 1인칭 3D 양궁. MediaPipe 손 추적과 Three.js로 동작합니다.",
+    href: "/games/bowhand/",
+    thumbnail: bowhandThumb,
+    accent: "#e94560",
+    secondary: "#a0c4ff",
+    stat: "카메라"
   }
 ];
