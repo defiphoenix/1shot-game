@@ -68,5 +68,16 @@ export const games = [
     accent: "#3f8e4d",
     secondary: "#f7c653",
     stat: "10 levels"
+  },
+  {
+    id: "infinite-stairs",
+    title: "Infinite Stairs",
+    deck: "무한 계단 등반",
+    detail: "구름 위 돌계단을 읽고 방향을 꺾으며 아래에서 쫓아오는 어둠보다 빠르게 오르는 원버튼 등반 아케이드.",
+    href: "/games/infinite-stairs/",
+    thumbnail: "/games/infinite-stairs/image.png",
+    accent: "#3a76d6",
+    secondary: "#c9cdd4",
+    stat: "∞ stairs"
   }
 ];

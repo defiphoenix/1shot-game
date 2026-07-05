@@ -17,6 +17,11 @@ const staticApps = [
     name: "hero-quest",
     source: "games/hero-quest",
     target: "dist/games/hero-quest"
+  },
+  {
+    name: "infinite-stairs",
+    source: "games/infinite-stairs",
+    target: "dist/games/infinite-stairs"
   }
 ];
 

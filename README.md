@@ -10,6 +10,7 @@ Vite 기반 멀티 페이지 게임 런처입니다. 메인 페이지에서 Thre
 - Natural UI: Tearable Layers: `/games/naturalUI/`
 - Vibe Fighter: `/games/vibe-fighter/`
 - 보따리의 작은 여행: `/games/hero-quest/`
+- Infinite Stairs: `/games/infinite-stairs/`
 
 Eastern Clash uses image-generated realistic side-facing character cutouts under `src/assets/characters/eastern-clash/` as the visible fighter layer, while the Three.js game loop keeps lightweight procedural hitboxes and strike effects for browser performance.
 
@@ -80,7 +81,8 @@ npm run preview
 
 - `index.html`은 게임 선택용 메인 런처입니다.
 - 각 게임은 별도 HTML, CSS, JavaScript 파일로 분리되어 유지보수 범위를 좁힙니다.
-- `games/naturalUI/`, `games/vibe-fighter/`, `games/hero-quest/`는 이미 빌드된 정적 앱이므로 Vite build 후 `dist/games/`로 그대로 복사됩니다.
+- `games/naturalUI/`, `games/vibe-fighter/`, `games/hero-quest/`, `games/infinite-stairs/`는 이미 빌드된 정적 앱이므로 Vite build 후 `dist/games/`로 그대로 복사됩니다.
+- `games/infinite-stairs/`는 https://github.com/landfill/infinite3d (Vite + TypeScript) 프로젝트를 `--base=./`로 빌드한 결과물입니다. 갱신하려면 원본 저장소에서 다시 빌드해 복사합니다.
 - `vibe-fighter-main/`은 Vibe Fighter의 원본 Phaser/Vite 프로젝트입니다. 하위 게임 경로에 배포할 때는 이 프로젝트를 빌드해 `games/vibe-fighter/`를 갱신합니다.
 - `hero-quest-main/`은 Hero Quest 에셋팩입니다. `games/hero-quest/`는 해당 에셋을 사용하는 정적 Canvas 게임입니다.
 - `voxel-pagoda-rpg.html`은 기존 직접 접근 경로를 새 RPG 게임 경로로 넘기는 호환용 리다이렉트 페이지입니다.

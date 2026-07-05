@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Infinite Stairs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-BqFK1jhX.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B1Ymirbq.css">
+  </head>
+  <body data-ui-state="mainMenu">
+    <div id="app">
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="uiLayer">
+        <div id="skyBackdrop" aria-hidden="true">
+          <div class="backdrop-scene backdrop-day"></div>
+          <div class="backdrop-scene backdrop-night"></div>
+          <div class="backdrop-overlay"></div>
+          <div class="backdrop-godray"></div>
+          <div class="backdrop-cloud backdrop-cloud-top"></div>
+          <div class="backdrop-cloud backdrop-cloud-bottom"></div>
+          <div class="backdrop-stars"></div>
+        </div>
+
+        <div id="mainMenu" class="screen active">
+          <div class="screen-shell menu-shell">
+            <div class="menu-layout">
+              <section class="menu-story">
+                <div class="hero-copy">
+                  <p class="eyebrow">Spiral Ascension</p>
+                  <h1 class="game-title">Infinite Stairs</h1>
+                  <p class="subtitle">
+                    Read the next stone, pivot without hesitation, and stay
+                    ahead of the dark climbing from below.
+                  </p>
+                </div>
+
+                <div class="menu-meta">
+                  <section class="stone-card score-card compact-card">
+                    <span class="card-label">Best Height</span>
+                    <strong id="highScoreText">0</strong>
+                    <p>Highest clean climb so far.</p>
+                  </section>
+
+                  <section class="stone-card objective-card compact-card">
+                    <span class="card-label">Run Feel</span>
+                    <p>
+                      Zigzag reads, low-angle depth, and a single lane of light
+                      far above the clouds.
+                    </p>
+                  </section>
+                </div>
+
+                <section class="rule-strip">
+                  <article class="rule-pill">
+                    <span class="rule-index">01</span>
+                    <p>Match the next stair direction instantly.</p>
+                  </article>
+                  <article class="rule-pill">
+                    <span class="rule-index">02</span>
+                    <p>Keep the survival gauge alive by staying in rhythm.</p>
+                  </article>
+                  <article class="rule-pill">
+                    <span class="rule-index">03</span>
+                    <p>Miss once and the climb collapses.</p>
+                  </article>
+                </section>
+
+                <section class="control-panel">
+                  <div class="control-cell">
+                    <span class="card-label">Climb</span>
+                    <p><kbd>Up</kbd><kbd>X</kbd></p>
+                  </div>
+                  <div class="control-cell">
+                    <span class="card-label">Turn</span>
+                    <p><kbd>Space</kbd><kbd>Z</kbd></p>
+                  </div>
+                  <div class="control-cell mobile-cell">
+                    <span class="card-label">Mobile</span>
+                    <p>Use the two buttons at the bottom.</p>
+                  </div>
+                </section>
+
+                <div class="cta-row">
+                  <button id="startBtn" class="primary-btn">Start Climb</button>
+                  <p class="cta-note">
+                    Follow the reference path: wider zigzags, clear turn reads,
+                    and relentless upward pressure.
+                  </p>
+                </div>
+              </section>
+
+              <aside class="menu-visual">
+                <div class="reference-frame">
+                  <div class="reference-chip">Reference Route</div>
+                  <img
+                    class="reference-image"
+                    src="./image.png"
+                    alt="Reference stair composition for the intro screen"
+                  />
+                  <div class="reference-summary">
+                    <div class="reference-stat">
+                      <span>Path</span>
+                      <strong>Wide zigzag ascent</strong>
+                    </div>
+                    <div class="reference-stat">
+                      <span>Read</span>
+                      <strong>Commit before hesitation</strong>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <div id="hud" class="screen">
+          <div class="hud-shell">
+            <div class="hud-panel score-panel">
+              <span class="hud-label">Altitude</span>
+              <div id="scoreText">0</div>
+              <p>Steps cleared</p>
+            </div>
+
+            <div class="hud-panel flow-panel">
+              <div class="combo-chip">
+                <span class="hud-mini-label">Flow</span>
+                <div id="comboDisplay" class="combo-display">0 COMBO</div>
+              </div>
+
+              <div class="gauge-panel">
+                <div class="gauge-header">
+                  <span class="hud-mini-label">Survival Window</span>
+                  <span class="gauge-tip">Do not lose the rhythm</span>
+                </div>
+                <div class="gauge-container">
+                  <div id="timeGauge" class="gauge-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="bonusOverlay" class="bonus-overlay">
+            <div class="bonus-inner">
+              <div id="bonusText" class="bonus-text">BONUS RUSH +0/10</div>
+              <div class="bonus-progress-container">
+                <div id="bonusProgress" class="bonus-progress-bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hud-footer">
+            <p class="hud-note">
+              Watch the floating staircase and commit instantly. Hesitation is
+              as dangerous as a wrong turn.
+            </p>
+
+            <div id="mobileControls">
+              <div id="btnTurn" class="control-btn">
+                <span class="icon">T</span>
+                Turn
+              </div>
+              <div id="btnClimb" class="control-btn">
+                <span class="icon">C</span>
+                Climb
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="gameOver" class="screen">
+          <div class="screen-shell gameover-shell">
+            <p class="eyebrow">Nightfall</p>
+            <h2 class="game-over-title">The light slipped away</h2>
+            <p class="game-over-copy">
+              The climb ended under a colder sky. Check your run and try the
+              spiral again.
+            </p>
+
+            <div class="result-board">
+              <div class="result-item">
+                <span class="result-label">Run</span>
+                <strong id="finalScore">0</strong>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Best</span>
+                <strong id="bestScore">0</strong>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Max Combo</span>
+                <strong id="maxComboText">0</strong>
+              </div>
+            </div>
+
+            <button id="restartBtn" class="primary-btn">Climb Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
