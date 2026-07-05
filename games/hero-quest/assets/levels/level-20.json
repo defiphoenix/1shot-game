@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "savedAt": "2026-07-05T13:20:00.000Z",
+  "level": {
+    "version": 1,
+    "id": "level-20",
+    "title": "Stage 20: Orc Ridge",
+    "width": 4400,
+    "height": 720,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 4400,
+      "height": 720
+    },
+    "playerStart": {
+      "x": 142,
+      "y": 368
+    },
+    "objects": [
+      {
+        "id": "start-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 300,
+        "y": 564,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-1",
+        "frameName": "platform-medium-grass-stone",
+        "x": 700,
+        "y": 520,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-2",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1050,
+        "y": 476,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-2",
+        "frameName": "collectible-coin",
+        "x": 1050,
+        "y": 396,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "plat-3",
+        "frameName": "platform-long-grass-stone",
+        "x": 1490,
+        "y": 460,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "enemy-1",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 1490,
+        "y": 404,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "coin-3",
+        "frameName": "collectible-coin",
+        "x": 1490,
+        "y": 380,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "plat-4",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1900,
+        "y": 500,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "hazard-4",
+        "frameName": "hazard-spike-strip",
+        "x": 1900,
+        "y": 490,
+        "scale": 0.727,
+        "depth": 14
+      },
+      {
+        "id": "safe-ledge-4",
+        "frameName": "platform-floating-ledge",
+        "x": 1900,
+        "y": 372,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-5",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2250,
+        "y": 530,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-6",
+        "frameName": "platform-long-grass-stone",
+        "x": 2690,
+        "y": 540,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "enemy-2",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 2690,
+        "y": 484,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "plat-7",
+        "frameName": "platform-short-grass-stone",
+        "x": 3050,
+        "y": 520,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-7",
+        "frameName": "collectible-coin",
+        "x": 3050,
+        "y": 440,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "plat-8",
+        "frameName": "platform-long-grass-stone",
+        "x": 3460,
+        "y": 520,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "enemy-3",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 3460,
+        "y": 464,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "coin-8",
+        "frameName": "collectible-coin",
+        "x": 3460,
+        "y": 440,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "end-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 3960,
+        "y": 496,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "enemy-4",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 3960,
+        "y": 440,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "exit-portal",
+        "frameName": "portal-exit-complete",
+        "x": 4060,
+        "y": 436,
+        "scale": 0.727,
+        "depth": 12
+      }
+    ]
+  }
+}

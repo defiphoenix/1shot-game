@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "savedAt": "2026-07-05T13:20:00.000Z",
+  "level": {
+    "version": 1,
+    "id": "level-19",
+    "title": "Stage 19: Orc Vanguard",
+    "width": 3400,
+    "height": 720,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 3400,
+      "height": 720
+    },
+    "playerStart": {
+      "x": 142,
+      "y": 368
+    },
+    "objects": [
+      {
+        "id": "start-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 300,
+        "y": 564,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-1",
+        "frameName": "platform-long-grass-stone",
+        "x": 770,
+        "y": 556,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "enemy-1",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 770,
+        "y": 500,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "coin-1",
+        "frameName": "collectible-coin",
+        "x": 770,
+        "y": 476,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "plat-2",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1180,
+        "y": 540,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-3",
+        "frameName": "platform-long-grass-stone",
+        "x": 1610,
+        "y": 540,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "enemy-2",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 1610,
+        "y": 484,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "coin-2",
+        "frameName": "collectible-coin",
+        "x": 1610,
+        "y": 460,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "plat-4",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2020,
+        "y": 524,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-5",
+        "frameName": "platform-long-grass-stone",
+        "x": 2450,
+        "y": 524,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "enemy-3",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 2450,
+        "y": 468,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "coin-3",
+        "frameName": "collectible-coin",
+        "x": 2450,
+        "y": 444,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "end-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 2950,
+        "y": 500,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "exit-portal",
+        "frameName": "portal-exit-complete",
+        "x": 3050,
+        "y": 440,
+        "scale": 0.727,
+        "depth": 12
+      }
+    ]
+  }
+}

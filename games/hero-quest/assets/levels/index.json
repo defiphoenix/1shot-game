@@ -90,6 +90,31 @@
       "id": "level-18",
       "title": "Stage 18: Orc Territory",
       "url": "/assets/levels/level-18.json"
+    },
+    {
+      "id": "level-19",
+      "title": "Stage 19: Orc Vanguard",
+      "url": "/assets/levels/level-19.json"
+    },
+    {
+      "id": "level-20",
+      "title": "Stage 20: Orc Ridge",
+      "url": "/assets/levels/level-20.json"
+    },
+    {
+      "id": "level-21",
+      "title": "Stage 21: Orc Gorge",
+      "url": "/assets/levels/level-21.json"
+    },
+    {
+      "id": "level-22",
+      "title": "Stage 22: Orc Stronghold",
+      "url": "/assets/levels/level-22.json"
+    },
+    {
+      "id": "level-23",
+      "title": "Stage 23: Warlord's Gate",
+      "url": "/assets/levels/level-23.json"
     }
   ]
 }
