@@ -122,14 +122,22 @@ function generateLevel(index) {
     });
 
     // Add a floating ledge above to allow safe passage
+    const ledgeY = Math.round(curY - 120 - random() * 20);
     objects.push({
       "id": `safe-ledge-${id}`,
       "frameName": "platform-floating-ledge",
       "x": Math.round(curX),
-      "y": Math.round(curY - 120 - random() * 20),
+      "y": ledgeY,
       "scale": 0.727,
       "depth": 10
     });
+
+    // A coin left over the spikes would force the player into the hazard,
+    // so lift it onto the safe ledge instead.
+    const coin = objects.find((object) => object.id === `coin-${id}`);
+    if (coin) {
+      coin.y = ledgeY - 80;
+    }
   }
 
   function placeOrc(id, curX, curY) {
@@ -199,7 +207,20 @@ for (let i = 1; i <= TOTAL_LEVELS; i++) {
   const levelData = generateLevel(i);
   const filePath = path.join(OUT_DIR, `level-${i}.json`);
   fs.writeFileSync(filePath, JSON.stringify(levelData, null, 2), "utf8");
-  
+
+  indexData.levels.push({
+    "id": `level-${i}`,
+    "title": levelData.level.title,
+    "url": `/assets/levels/level-${i}.json`
+  });
+}
+
+// Levels beyond TOTAL_LEVELS are hand-authored (19+); keep them in the index
+// instead of dropping them on regeneration.
+for (let i = TOTAL_LEVELS + 1; ; i++) {
+  const filePath = path.join(OUT_DIR, `level-${i}.json`);
+  if (!fs.existsSync(filePath)) break;
+  const levelData = JSON.parse(fs.readFileSync(filePath, "utf8"));
   indexData.levels.push({
     "id": `level-${i}`,
     "title": levelData.level.title,
@@ -209,4 +230,4 @@ for (let i = 1; i <= TOTAL_LEVELS; i++) {
 
 fs.writeFileSync(path.join(OUT_DIR, "index.json"), JSON.stringify(indexData, null, 2), "utf8");
 
-console.log(`Successfully generated ${TOTAL_LEVELS} levels.`);
+console.log(`Successfully indexed ${indexData.levels.length} levels (${TOTAL_LEVELS} generated).`);

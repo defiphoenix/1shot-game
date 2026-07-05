@@ -46,7 +46,7 @@
         "id": "coin-2",
         "frameName": "collectible-coin",
         "x": 1037,
-        "y": 469,
+        "y": 333,
         "scale": 0.727,
         "depth": 24
       },
@@ -78,7 +78,7 @@
         "id": "coin-3",
         "frameName": "collectible-coin",
         "x": 1346,
-        "y": 438,
+        "y": 316,
         "scale": 0.727,
         "depth": 24
       },
@@ -110,7 +110,7 @@
         "id": "coin-4",
         "frameName": "collectible-coin",
         "x": 1664,
-        "y": 439,
+        "y": 311,
         "scale": 0.727,
         "depth": 24
       },
@@ -150,7 +150,7 @@
         "id": "coin-6",
         "frameName": "collectible-coin",
         "x": 2317,
-        "y": 462,
+        "y": 332,
         "scale": 0.727,
         "depth": 24
       },
@@ -238,7 +238,7 @@
         "id": "coin-11",
         "frameName": "collectible-coin",
         "x": 3750,
-        "y": 453,
+        "y": 327,
         "scale": 0.727,
         "depth": 24
       },

@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 127.0.0.1",
+    "dev": "node init && vite --host 127.0.0.1",
     "test": "node --test scripts/*.test.mjs",
-    "build": "vite build",
+    "build": "node init && vite build",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
