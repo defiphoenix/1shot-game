@@ -497,6 +497,12 @@ function resolvePortal() {
           buttonText: "다음 스테이지",
           shortcut: "KeyN"
         });
+      }).catch((err) => {
+        console.error(err);
+        showOverlay("임무 완수", "마지막 게이트가 복구되었습니다.", {
+          action: "restart-all",
+          buttonText: "처음부터"
+        });
       });
     } else {
       showOverlay("임무 완수", "마지막 게이트가 복구되었습니다.", {

@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "savedAt": "2026-05-28T14:40:39.390Z",
+  "savedAt": "2026-07-05T00:00:00.000Z",
   "level": {
     "version": 1,
     "id": "level-2",
     "title": "High Road",
-    "width": 2600,
+    "width": 2400,
     "height": 720,
     "bounds": {
       "x": 0,
       "y": 0,
-      "width": 2600,
+      "width": 2400,
       "height": 720
     },
     "playerStart": {
@@ -29,31 +29,39 @@
       {
         "id": "ground-2",
         "frameName": "platform-medium-grass-stone",
-        "x": 800,
-        "y": 560,
+        "x": 715,
+        "y": 564,
         "scale": 0.7272727272727273,
         "depth": 10
       },
       {
         "id": "ground-3",
         "frameName": "platform-long-grass-stone",
-        "x": 1260,
+        "x": 1080,
         "y": 564,
         "scale": 0.7272727272727273,
         "depth": 10
       },
       {
         "id": "ground-4",
-        "frameName": "platform-long-grass-stone",
-        "x": 1940,
+        "frameName": "platform-medium-grass-stone",
+        "x": 1500,
         "y": 564,
         "scale": 0.7272727272727273,
         "depth": 10
       },
       {
         "id": "ground-5",
+        "frameName": "platform-long-grass-stone",
+        "x": 1885,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-6",
         "frameName": "platform-medium-grass-stone",
-        "x": 2370,
+        "x": 2240,
         "y": 564,
         "scale": 0.7272727272727273,
         "depth": 10
@@ -61,63 +69,71 @@
       {
         "id": "step-1",
         "frameName": "platform-short-grass-stone",
-        "x": 576,
-        "y": 448,
+        "x": 610,
+        "y": 461,
         "scale": 0.7272727272727273,
         "depth": 10
       },
       {
         "id": "step-2",
-        "frameName": "platform-medium-grass-stone",
-        "x": 1050,
-        "y": 318,
+        "frameName": "platform-floating-ledge",
+        "x": 790,
+        "y": 422,
         "scale": 0.7272727272727273,
         "depth": 10
       },
       {
         "id": "step-3",
-        "frameName": "platform-short-grass-stone",
-        "x": 1584,
-        "y": 464,
+        "frameName": "platform-medium-grass-stone",
+        "x": 1280,
+        "y": 471,
         "scale": 0.7272727272727273,
         "depth": 10
       },
       {
+        "id": "coin-1",
+        "frameName": "collectible-coin",
+        "x": 610,
+        "y": 344,
+        "scale": 0.7272727272727273,
+        "depth": 24
+      },
+      {
         "id": "coin-2",
         "frameName": "collectible-coin",
-        "x": 1056,
-        "y": 192,
+        "x": 790,
+        "y": 294,
         "scale": 0.7272727272727273,
         "depth": 24
       },
       {
         "id": "coin-3",
         "frameName": "collectible-coin",
-        "x": 1584,
-        "y": 352,
+        "x": 1280,
+        "y": 354,
         "scale": 0.7272727272727273,
         "depth": 24
       },
       {
         "id": "coin-4",
         "frameName": "collectible-coin",
-        "x": 2008,
-        "y": 448,
+        "x": 1970,
+        "y": 446,
         "scale": 0.7272727272727273,
         "depth": 24
       },
       {
         "id": "spike-strip",
         "frameName": "hazard-spike-strip",
-        "x": 800,
-        "y": 496,
+        "x": 1450,
+        "y": 564,
         "scale": 0.7272727272727273,
         "depth": 18
       },
       {
         "id": "exit-portal",
         "frameName": "portal-exit-complete",
-        "x": 2384,
+        "x": 2240,
         "y": 503,
         "scale": 0.7272727272727273,
         "depth": 12
@@ -133,18 +149,10 @@
       {
         "id": "flower",
         "frameName": "prop-flower",
-        "x": 1320,
+        "x": 1730,
         "y": 564,
         "scale": 0.7272727272727273,
         "depth": 16
-      },
-      {
-        "id": "platform-floating-ledge-mpplg7xo",
-        "frameName": "platform-floating-ledge",
-        "x": 784,
-        "y": 352,
-        "scale": 0.7272727272727273,
-        "depth": 10
       }
     ]
   }
