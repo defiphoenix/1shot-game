@@ -242,7 +242,10 @@ function start() {
 
 function runOverlayAction() {
   if (state.overlayAction === "restart-all") {
-    loadLevel(LEVEL_IDS[0]).then(start);
+    loadLevel(LEVEL_IDS[0]).then(start).catch((err) => {
+      console.error(err);
+      showOverlay("불러오기 오류", "레벨을 불러올 수 없습니다.", { action: "restart-all", buttonText: "다시 시도" });
+    });
     return;
   }
   if (state.overlayAction === "restart" || (state.player && state.player.health <= 0)) {
@@ -262,7 +265,10 @@ function showOverlay(kicker, title, options = {}) {
 }
 
 function restart() {
-  loadLevel(state.levelId).then(start);
+  loadLevel(state.levelId).then(start).catch((err) => {
+    console.error(err);
+    showOverlay("불러오기 오류", "레벨을 불러올 수 없습니다.", { action: "restart", buttonText: "다시 시도" });
+  });
 }
 
 let lastTime = 0;
@@ -362,7 +368,11 @@ function updateEnemies(dt) {
     enemy.attack = Math.max(0, enemy.attack - dt);
     enemy.throwCooldown = Math.max(0, enemy.throwCooldown - dt);
     enemy.x += enemy.vx * dt;
-    if (Math.abs(enemy.x - enemy.homeX) > 190) enemy.vx *= -1;
+    if (enemy.x > enemy.homeX + 190) {
+      enemy.vx = -Math.abs(enemy.vx);
+    } else if (enemy.x < enemy.homeX - 190) {
+      enemy.vx = Math.abs(enemy.vx);
+    }
     enemy.facing = Math.sign(enemy.vx) || enemy.facing;
 
     const enemyRect = frameRect(enemy);
@@ -555,6 +565,7 @@ function drawMeadowDoodles(factor) {
   const scroll = state.cameraX * factor;
   const first = Math.floor(scroll / spacing) - 1;
   const count = Math.ceil(WIDTH / spacing) + 2;
+  ctx.save();
   ctx.lineWidth = 2;
   ctx.lineCap = "round";
   for (let i = first; i < first + count; i += 1) {
@@ -573,6 +584,7 @@ function drawMeadowDoodles(factor) {
       ctx.fill();
     }
   }
+  ctx.restore();
 }
 
 function drawGrassTuft(x, y) {
@@ -592,7 +604,7 @@ function drawDaisy(x, y) {
   for (let a = 0; a < 5; a += 1) {
     const ang = (a / 5) * Math.PI * 2;
     ctx.beginPath();
-    ctx.ellipse(x + Math.cos(ang) * 4.5, y - 14 + Math.sin(ang) * 4.5, 2.6, 2.6, 0, 0, Math.PI * 2);
+    ctx.arc(x + Math.cos(ang) * 4.5, y - 14 + Math.sin(ang) * 4.5, 2.6, 0, Math.PI * 2);
     ctx.stroke();
   }
   ctx.fillStyle = "rgba(239, 143, 58, 0.8)";
@@ -669,7 +681,7 @@ function drawInkPlatform(r, seed) {
   for (let i = 0; i < nDash; i += 1) {
     const h = inkHash(seed + i * 97);
     const dx = r.x + 16 + (h % Math.max(1, r.width - 52));
-    const dy = r.y + r.height * 0.42 + ((h >> 4) % Math.max(1, Math.floor(r.height * 0.42)));
+    const dy = r.y + r.height * 0.42 + ((h >>> 4) % Math.max(1, Math.floor(r.height * 0.42)));
     ctx.beginPath();
     ctx.moveTo(dx, dy);
     ctx.lineTo(dx + 12 + (h % 10), dy);
@@ -819,6 +831,7 @@ function drawInkSpikes(r) {
     ctx.moveTo(x + 2, bridgeTopY);
     ctx.lineTo(x + w / 2, spikeTipY);
     ctx.lineTo(x + w - 2, bridgeTopY);
+    ctx.closePath();
     ctx.fill();
     ctx.stroke();
   }
