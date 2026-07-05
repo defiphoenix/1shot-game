@@ -15,6 +15,41 @@
       "id": "level-3",
       "title": "Orc Gate",
       "url": "/assets/levels/level-3.json"
+    },
+    {
+      "id": "level-4",
+      "title": "Broken Steps",
+      "url": "/assets/levels/level-4.json"
+    },
+    {
+      "id": "level-5",
+      "title": "Spike Garden",
+      "url": "/assets/levels/level-5.json"
+    },
+    {
+      "id": "level-6",
+      "title": "Pillar Run",
+      "url": "/assets/levels/level-6.json"
+    },
+    {
+      "id": "level-7",
+      "title": "Orc Patrol",
+      "url": "/assets/levels/level-7.json"
+    },
+    {
+      "id": "level-8",
+      "title": "Sky Coins",
+      "url": "/assets/levels/level-8.json"
+    },
+    {
+      "id": "level-9",
+      "title": "Hazard Gauntlet",
+      "url": "/assets/levels/level-9.json"
+    },
+    {
+      "id": "level-10",
+      "title": "Final Gate",
+      "url": "/assets/levels/level-10.json"
     }
   ]
 }

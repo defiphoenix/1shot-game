@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "savedAt": "2026-07-05T00:00:00.000Z",
+  "level": {
+    "version": 1,
+    "id": "level-9",
+    "title": "Hazard Gauntlet",
+    "width": 4550,
+    "height": 720,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 4550,
+      "height": 720
+    },
+    "playerStart": {
+      "x": 142,
+      "y": 368
+    },
+    "objects": [
+      {
+        "id": "ground-1",
+        "frameName": "platform-long-grass-stone",
+        "x": 286,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-2",
+        "frameName": "platform-medium-grass-stone",
+        "x": 700,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-3",
+        "frameName": "platform-long-grass-stone",
+        "x": 1040,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-4",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1450,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-5",
+        "frameName": "platform-long-grass-stone",
+        "x": 1800,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-6",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2220,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-7",
+        "frameName": "platform-long-grass-stone",
+        "x": 2580,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-8",
+        "frameName": "platform-medium-grass-stone",
+        "x": 3000,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-9",
+        "frameName": "platform-long-grass-stone",
+        "x": 3360,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-10",
+        "frameName": "platform-medium-grass-stone",
+        "x": 3780,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-11",
+        "frameName": "platform-long-grass-stone",
+        "x": 4140,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "ground-12",
+        "frameName": "platform-medium-grass-stone",
+        "x": 4380,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "safe-1",
+        "frameName": "platform-short-grass-stone",
+        "x": 760,
+        "y": 451,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "safe-2",
+        "frameName": "platform-floating-ledge",
+        "x": 1220,
+        "y": 417,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "safe-3",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2040,
+        "y": 461,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "safe-4",
+        "frameName": "platform-floating-ledge",
+        "x": 2860,
+        "y": 432,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "safe-5",
+        "frameName": "platform-short-grass-stone",
+        "x": 3700,
+        "y": 446,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
+        "id": "coin-1",
+        "frameName": "collectible-coin",
+        "x": 760,
+        "y": 334,
+        "scale": 0.7272727272727273,
+        "depth": 24
+      },
+      {
+        "id": "coin-2",
+        "frameName": "collectible-coin",
+        "x": 1220,
+        "y": 289,
+        "scale": 0.7272727272727273,
+        "depth": 24
+      },
+      {
+        "id": "coin-3",
+        "frameName": "collectible-coin",
+        "x": 2040,
+        "y": 344,
+        "scale": 0.7272727272727273,
+        "depth": 24
+      },
+      {
+        "id": "coin-4",
+        "frameName": "collectible-coin",
+        "x": 2860,
+        "y": 304,
+        "scale": 0.7272727272727273,
+        "depth": 24
+      },
+      {
+        "id": "coin-5",
+        "frameName": "collectible-coin",
+        "x": 3700,
+        "y": 329,
+        "scale": 0.7272727272727273,
+        "depth": 24
+      },
+      {
+        "id": "coin-6",
+        "frameName": "collectible-coin",
+        "x": 4140,
+        "y": 446,
+        "scale": 0.7272727272727273,
+        "depth": 24
+      },
+      {
+        "id": "spike-1",
+        "frameName": "hazard-spike-strip",
+        "x": 610,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 18
+      },
+      {
+        "id": "spike-2",
+        "frameName": "hazard-spike-strip",
+        "x": 1250,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 18
+      },
+      {
+        "id": "spike-3",
+        "frameName": "hazard-spike-strip",
+        "x": 2080,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 18
+      },
+      {
+        "id": "spike-4",
+        "frameName": "hazard-spike-strip",
+        "x": 2860,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 18
+      },
+      {
+        "id": "spike-5",
+        "frameName": "hazard-spike-strip",
+        "x": 3660,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 18
+      },
+      {
+        "id": "orc-1",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 3040,
+        "y": 512,
+        "scale": 0.7024390243902439,
+        "depth": 22
+      },
+      {
+        "id": "exit-portal",
+        "frameName": "portal-exit-complete",
+        "x": 4380,
+        "y": 503,
+        "scale": 0.7272727272727273,
+        "depth": 12
+      },
+      {
+        "id": "grass-1",
+        "frameName": "prop-grass-tuft",
+        "x": 1540,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 16
+      },
+      {
+        "id": "flower-1",
+        "frameName": "prop-flower",
+        "x": 4140,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 16
+      }
+    ]
+  }
+}
