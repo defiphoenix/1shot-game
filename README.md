@@ -9,7 +9,7 @@ Vite 기반 멀티 페이지 게임 런처입니다. 메인 페이지에서 Thre
 - Eastern Clash: Shadow Arena: `/games/eastern-clash-shadow-arena/`
 - Natural UI: Tearable Layers: `/games/naturalUI/`
 - Vibe Fighter: `/games/vibe-fighter/`
-- Hero Quest: `/games/hero-quest/`
+- 보따리의 작은 여행: `/games/hero-quest/`
 
 Eastern Clash uses image-generated realistic side-facing character cutouts under `src/assets/characters/eastern-clash/` as the visible fighter layer, while the Three.js game loop keeps lightweight procedural hitboxes and strike effects for browser performance.
 

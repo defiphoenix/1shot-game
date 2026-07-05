@@ -74,10 +74,12 @@ test("launcher exposes the hero quest static app", () => {
   const gamesSource = readProjectFile("src/data/games.js");
 
   assert.match(gamesSource, /id:\s*"hero-quest"/);
+  assert.match(gamesSource, /title:\s*"보따리의 작은 여행"/);
+  assert.doesNotMatch(gamesSource, /title:\s*"Hero Quest"/);
   assert.match(gamesSource, /href:\s*"\/games\/hero-quest\/"/);
   assert.match(
     gamesSource,
-    /thumbnail:\s*"\/games\/hero-quest\/assets\/splash\/hero-quest-splash\.png"/
+    /thumbnail:\s*"\/games\/hero-quest\/assets\/splash\/bottari-small-journey-card\.png"/
   );
 });
 
@@ -89,10 +91,42 @@ test("hero quest static runtime assets are present", () => {
     "games/hero-quest/assets/tiles/quest/atlas-transparent.png",
     "games/hero-quest/assets/hero-v2/idle.png",
     "games/hero-quest/assets/enemies/purple-orc/idle.png",
-    "games/hero-quest/assets/levels/level-1.json"
+    "games/hero-quest/assets/splash/bottari-small-journey-card.png",
+    "games/hero-quest/assets/levels/level-1.json",
+    "games/hero-quest/assets/levels/level-10.json"
   ];
 
   for (const file of requiredFiles) {
     assert.ok(existsSync(resolve(rootDir, file)), `${file} should exist`);
   }
+});
+
+test("hero quest visible title matches Bottari", () => {
+  const html = readProjectFile("games/hero-quest/index.html");
+
+  assert.match(html, /<title>보따리의 작은 여행<\/title>/);
+  assert.match(html, /<strong>보따리의 작은 여행<\/strong>/);
+  assert.match(html, /<p id="overlayKicker">보따리의 작은 여행<\/p>/);
+  assert.doesNotMatch(html, /영웅의 여정/);
+});
+
+test("hero quest maps the next-stage shortcut and label", () => {
+  const html = readProjectFile("games/hero-quest/index.html");
+  const gameSource = readProjectFile("games/hero-quest/game.js");
+
+  assert.match(html, /<b>N<\/b>\s*다음/);
+  assert.match(gameSource, /buttonText:\s*"다음 스테이지"/);
+  assert.match(gameSource, /shortcut:\s*"KeyN"/);
+});
+
+test("hero quest enemies can throw damaging stones", () => {
+  const gameSource = readProjectFile("games/hero-quest/game.js");
+
+  assert.match(gameSource, /const STONE_DAMAGE = 14;/);
+  assert.match(gameSource, /projectiles:\s*\[\]/);
+  assert.match(gameSource, /maybeThrowStone\(enemy, player\)/);
+  assert.match(gameSource, /updateProjectiles\(dt\)/);
+  assert.match(gameSource, /state\.projectiles\.push\(/);
+  assert.match(gameSource, /hurtPlayer\(STONE_DAMAGE\)/);
+  assert.match(gameSource, /drawProjectiles\(\)/);
 });

@@ -60,13 +60,13 @@ export const games = [
   },
   {
     id: "hero-quest",
-    title: "Hero Quest",
-    deck: "Fantasy platformer",
-    detail: "A playable canvas platformer built from the Hero Quest asset pack with parallax forests, sprite animation, coins, hazards, enemies, and portal goals.",
+    title: "보따리의 작은 여행",
+    deck: "손그림 플랫폼 여행",
+    detail: "작고 둥근 여행 배낭 보따리가 코인을 모으고, 돌을 피하고, 조용한 숲길의 포탈을 찾아가는 Canvas platformer.",
     href: "/games/hero-quest/",
-    thumbnail: "/games/hero-quest/assets/splash/hero-quest-splash.png",
+    thumbnail: "/games/hero-quest/assets/splash/bottari-small-journey-card.png",
     accent: "#3f8e4d",
     secondary: "#f7c653",
-    stat: "3 levels"
+    stat: "10 levels"
   }
 ];

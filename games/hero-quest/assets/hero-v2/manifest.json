@@ -2,8 +2,8 @@
   "$schema": "https://example.local/phaser-starter-hero-assets.schema.json",
   "version": 1,
   "id": "hero-v2",
-  "characterId": "round2-v2-quest-hero",
-  "description": "Revised high-fidelity west-facing platformer hero assets generated with Spriterrific SDK/CLI.",
+  "characterId": "bottari-quest-backpack",
+  "description": "Bottari hand-drawn backpack platformer character assets generated from the local Bottari renderer.",
   "direction": "w",
   "frameWidth": 256,
   "frameHeight": 256,
@@ -18,11 +18,9 @@
     "y": 255
   },
   "source": {
-    "baseAnimationRun": "spriterrific-sdk/animation-runs/20260527T102022Z-round2-v2-user-prompt-nosnap-w",
-    "runPostSelection": "spriterrific-sdk/animation-runs/20260527T102022Z-round2-v2-user-prompt-nosnap-w/run-w/frame-picker/20260527T103121Z/post-selection/20260527-113121",
-    "idleRun": "spriterrific-sdk/animation-runs/20260527T102433Z-round2-v2-standing-still-idle-w",
-    "enterPortalAnchorRun": "spriterrific-sdk/runs/20260528T055818Z-round2-hero-v2-back-nosnap-n",
-    "enterPortalRun": "spriterrific-sdk/animation-runs/20260528T055818Z-round2-hero-v2-walk-forward-into-portal-n"
+    "generator": "scripts/generate-bottari-hero-assets.py",
+    "style": "bottari-illust",
+    "notes": "Main-card-style black sketch lines, 3/4 white backpack body, large orange polka-dot bundle, transparent sprite sheets."
   },
   "images": [
     {
@@ -32,7 +30,7 @@
       "url": "/assets/hero-v2/anchor-w.png",
       "width": 1024,
       "height": 1024,
-      "usage": "Revised v2 west-facing transparent anchor reference"
+      "usage": "Bottari west-facing transparent anchor reference"
     },
     {
       "id": "hero-v2-anchor-n",
@@ -41,7 +39,7 @@
       "url": "/assets/hero-v2/anchor-n.png",
       "width": 1024,
       "height": 1024,
-      "usage": "Revised v2 north-facing back-view transparent anchor reference for portal entry"
+      "usage": "Bottari back-view transparent anchor reference for portal entry"
     }
   ],
   "animations": [
@@ -53,11 +51,11 @@
       "preview": "idle-preview.gif",
       "previewUrl": "/assets/hero-v2/idle-preview.gif",
       "frames": 12,
-      "columns": 5,
-      "rows": 3,
+      "columns": 4,
+      "rows": 4,
       "frameRate": 6,
       "repeat": -1,
-      "source": "idleRun"
+      "source": "bottariProceduralRenderer"
     },
     {
       "id": "hero-v2-walk",
@@ -67,11 +65,11 @@
       "preview": "walk-preview.gif",
       "previewUrl": "/assets/hero-v2/walk-preview.gif",
       "frames": 8,
-      "columns": 5,
-      "rows": 3,
+      "columns": 4,
+      "rows": 4,
       "frameRate": 7,
       "repeat": -1,
-      "source": "baseAnimationRun"
+      "source": "bottariProceduralRenderer"
     },
     {
       "id": "hero-v2-enter-portal",
@@ -83,11 +81,11 @@
       "preview": "enter-portal-preview.gif",
       "previewUrl": "/assets/hero-v2/enter-portal-preview.gif",
       "frames": 12,
-      "columns": 5,
-      "rows": 3,
+      "columns": 4,
+      "rows": 4,
       "frameRate": 7,
       "repeat": -1,
-      "source": "enterPortalRun"
+      "source": "bottariProceduralRenderer"
     },
     {
       "id": "hero-v2-run",
@@ -97,11 +95,11 @@
       "preview": "run-preview.gif",
       "previewUrl": "/assets/hero-v2/run-preview.gif",
       "frames": 8,
-      "columns": 5,
-      "rows": 3,
+      "columns": 4,
+      "rows": 4,
       "frameRate": 10,
       "repeat": -1,
-      "source": "runPostSelection"
+      "source": "bottariProceduralRenderer"
     },
     {
       "id": "hero-v2-jump",
@@ -111,11 +109,11 @@
       "preview": "jump-preview.gif",
       "previewUrl": "/assets/hero-v2/jump-preview.gif",
       "frames": 6,
-      "columns": 5,
-      "rows": 3,
+      "columns": 4,
+      "rows": 4,
       "frameRate": 8,
       "repeat": 0,
-      "source": "baseAnimationRun"
+      "source": "bottariProceduralRenderer"
     },
     {
       "id": "hero-v2-light-punch",
@@ -126,11 +124,11 @@
       "preview": "light-punch-preview.gif",
       "previewUrl": "/assets/hero-v2/light-punch-preview.gif",
       "frames": 8,
-      "columns": 5,
-      "rows": 3,
+      "columns": 4,
+      "rows": 4,
       "frameRate": 12,
       "repeat": 0,
-      "source": "baseAnimationRun"
+      "source": "bottariProceduralRenderer"
     },
     {
       "id": "hero-v2-hurt",
@@ -140,11 +138,11 @@
       "preview": "hurt-preview.gif",
       "previewUrl": "/assets/hero-v2/hurt-preview.gif",
       "frames": 6,
-      "columns": 5,
-      "rows": 3,
+      "columns": 4,
+      "rows": 4,
       "frameRate": 8,
       "repeat": 0,
-      "source": "baseAnimationRun"
+      "source": "bottariProceduralRenderer"
     },
     {
       "id": "hero-v2-death",
@@ -154,11 +152,11 @@
       "preview": "death-preview.gif",
       "previewUrl": "/assets/hero-v2/death-preview.gif",
       "frames": 10,
-      "columns": 5,
-      "rows": 3,
+      "columns": 4,
+      "rows": 4,
       "frameRate": 8,
       "repeat": 0,
-      "source": "baseAnimationRun"
+      "source": "bottariProceduralRenderer"
     }
   ]
 }

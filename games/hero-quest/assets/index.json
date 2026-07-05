@@ -19,6 +19,19 @@
         }
       },
       {
+        "id": "bottari-small-journey-card",
+        "kind": "image",
+        "path": "splash/bottari-small-journey-card.png",
+        "url": "/assets/splash/bottari-small-journey-card.png",
+        "width": 1600,
+        "height": 1000,
+        "usage": "Bottari-themed arcade launcher card thumbnail",
+        "phaser": {
+          "load": "image",
+          "key": "bottari-small-journey-card"
+        }
+      },
+      {
         "id": "hero-v2-anchor-w",
         "kind": "image",
         "path": "hero-v2/anchor-w.png",
@@ -33,7 +46,7 @@
           "x": 128,
           "y": 255
         },
-        "usage": "Revised v2 west-facing high-fidelity hero anchor reference",
+        "usage": "Bottari west-facing hand-drawn backpack anchor reference",
         "phaser": {
           "load": "image",
           "key": "hero-v2-anchor-w"
@@ -54,7 +67,7 @@
           "x": 128,
           "y": 255
         },
-        "usage": "Revised v2 north-facing back-view hero anchor reference for portal entry",
+        "usage": "Bottari back-view hand-drawn backpack anchor reference for portal entry",
         "phaser": {
           "load": "image",
           "key": "hero-v2-anchor-n"
@@ -174,7 +187,8 @@
         "phaser": {
           "load": "spritesheet",
           "key": "hero-v2-idle"
-        }
+        },
+        "source": "bottariProceduralRenderer"
       },
       {
         "id": "hero-v2-walk",
@@ -199,7 +213,8 @@
         "phaser": {
           "load": "spritesheet",
           "key": "hero-v2-walk"
-        }
+        },
+        "source": "bottariProceduralRenderer"
       },
       {
         "id": "hero-v2-enter-portal",
@@ -227,7 +242,7 @@
           "load": "spritesheet",
           "key": "hero-v2-enter-portal"
         },
-        "source": "spriterrific-sdk/animation-runs/20260528T055818Z-round2-hero-v2-walk-forward-into-portal-n"
+        "source": "bottariProceduralRenderer"
       },
       {
         "id": "hero-v2-run",
@@ -252,7 +267,8 @@
         "phaser": {
           "load": "spritesheet",
           "key": "hero-v2-run"
-        }
+        },
+        "source": "bottariProceduralRenderer"
       },
       {
         "id": "hero-v2-jump",
@@ -277,7 +293,8 @@
         "phaser": {
           "load": "spritesheet",
           "key": "hero-v2-jump"
-        }
+        },
+        "source": "bottariProceduralRenderer"
       },
       {
         "id": "hero-v2-light-punch",
@@ -309,7 +326,8 @@
         "phaser": {
           "load": "spritesheet",
           "key": "hero-v2-light-punch"
-        }
+        },
+        "source": "bottariProceduralRenderer"
       },
       {
         "id": "hero-v2-hurt",
@@ -334,7 +352,8 @@
         "phaser": {
           "load": "spritesheet",
           "key": "hero-v2-hurt"
-        }
+        },
+        "source": "bottariProceduralRenderer"
       },
       {
         "id": "hero-v2-death",
@@ -359,7 +378,8 @@
         "phaser": {
           "load": "spritesheet",
           "key": "hero-v2-death"
-        }
+        },
+        "source": "bottariProceduralRenderer"
       },
       {
         "id": "enemy-v3-purple-orc-idle",

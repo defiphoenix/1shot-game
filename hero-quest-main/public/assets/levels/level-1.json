@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-05-28T14:54:22.461Z",
+  "savedAt": "2026-07-05T00:00:00.000Z",
   "level": {
     "version": 1,
     "id": "level-1",
@@ -27,9 +27,17 @@
         "depth": 10
       },
       {
+        "id": "ground-mid",
+        "frameName": "platform-medium-grass-stone",
+        "x": 700,
+        "y": 564,
+        "scale": 0.7272727272727273,
+        "depth": 10
+      },
+      {
         "id": "ground-right",
         "frameName": "platform-long-grass-stone",
-        "x": 894,
+        "x": 1010,
         "y": 564,
         "scale": 0.7272727272727273,
         "depth": 10
@@ -37,8 +45,8 @@
       {
         "id": "coin-1",
         "frameName": "collectible-coin",
-        "x": 592,
-        "y": 368,
+        "x": 590,
+        "y": 446,
         "scale": 0.7272727272727273,
         "depth": 24
       },
@@ -67,12 +75,12 @@
         "depth": 16
       },
       {
-        "id": "platform-short-grass-stone-mppm5tus",
-        "frameName": "platform-short-grass-stone",
-        "x": 1135,
-        "y": 565,
+        "id": "bush",
+        "frameName": "prop-bush-clump",
+        "x": 980,
+        "y": 506,
         "scale": 0.7272727272727273,
-        "depth": 10
+        "depth": 16
       }
     ]
   }
