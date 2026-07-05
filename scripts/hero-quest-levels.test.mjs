@@ -128,8 +128,7 @@ test("hero quest levels remain jumpable with the current player physics", () => 
   const manifest = readJson(resolve(assetDir, "tiles/quest/atlas-transparent.manifest.json"));
   const frames = new Map(manifest.frames.map((frame) => [frame.name, frame]));
   const signatures = new Map();
-
-  assert.equal(index.levels.length, 10);
+  assert.equal(index.levels.length, 18);
 
   for (const entry of index.levels) {
     const payload = readJson(resolve(assetDir, `levels/${entry.id}.json`));

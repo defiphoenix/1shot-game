@@ -4,18 +4,8 @@ const ctx = canvas.getContext("2d");
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
 const BASE = document.baseURI;
-const LEVEL_IDS = [
-  "level-1",
-  "level-2",
-  "level-3",
-  "level-4",
-  "level-5",
-  "level-6",
-  "level-7",
-  "level-8",
-  "level-9",
-  "level-10"
-];
+// index.json이 레벨 순서의 단일 소스 — boot()에서 채워진다.
+let LEVEL_IDS = [];
 const GRAVITY = 2100;
 const WALK_SPEED = 280;
 const JUMP_SPEED = 900;
@@ -34,7 +24,7 @@ const ui = {
   overlayTitle: document.querySelector("#overlayTitle"),
   start: document.querySelector("#startButton"),
   restart: document.querySelector("#restartButton"),
-  levelButtons: [...document.querySelectorAll(".level-button")]
+  levelButtons: []
 };
 
 const keys = new Set();
@@ -141,10 +131,38 @@ async function boot() {
 
   tileManifest.frames.forEach((frame) => state.frames.set(frame.name, frame));
   assets.levels = levels.levels;
+  LEVEL_IDS = assets.levels.map((level) => level.id);
+  renderLevelButtons();
 
-  await loadLevel("level-1");
+  await loadLevel(LEVEL_IDS[0]);
   bindInput();
   requestAnimationFrame(loop);
+}
+
+function toRoman(value) {
+  const numerals = [[1000, "M"], [900, "CM"], [500, "D"], [400, "CD"], [100, "C"], [90, "XC"], [50, "L"], [40, "XL"], [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"]];
+  let rest = value;
+  let out = "";
+  for (const [amount, symbol] of numerals) {
+    while (rest >= amount) {
+      out += symbol;
+      rest -= amount;
+    }
+  }
+  return out;
+}
+
+function renderLevelButtons() {
+  ui.levelButtons = assets.levels.map((level, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "level-button";
+    button.dataset.level = level.id;
+    button.textContent = toRoman(index + 1);
+    button.title = level.title;
+    ui.restart.before(button);
+    return button;
+  });
 }
 
 async function loadLevel(levelId) {

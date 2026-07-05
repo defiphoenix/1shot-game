@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "savedAt": "2026-07-05T00:00:00.000Z",
+  "level": {
+    "version": 1,
+    "id": "level-18",
+    "title": "Stage 18: Orc Territory",
+    "width": 5600,
+    "height": 720,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 5600,
+      "height": 720
+    },
+    "playerStart": {
+      "x": 142,
+      "y": 368
+    },
+    "objects": [
+      {
+        "id": "start-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 300,
+        "y": 564,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-1",
+        "frameName": "platform-medium-grass-stone",
+        "x": 750,
+        "y": 536,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-1",
+        "frameName": "collectible-coin",
+        "x": 750,
+        "y": 456,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-1",
+        "frameName": "hazard-spike-strip",
+        "x": 750,
+        "y": 526,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-1",
+        "frameName": "platform-floating-ledge",
+        "x": 750,
+        "y": 398,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-2",
+        "frameName": "platform-short-grass-stone",
+        "x": 1066,
+        "y": 524,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-2",
+        "frameName": "collectible-coin",
+        "x": 1066,
+        "y": 444,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-3",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1363,
+        "y": 508,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "hazard-3",
+        "frameName": "hazard-spike-strip",
+        "x": 1363,
+        "y": 498,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-3",
+        "frameName": "platform-floating-ledge",
+        "x": 1363,
+        "y": 383,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-4",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1723,
+        "y": 491,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-4",
+        "frameName": "collectible-coin",
+        "x": 1723,
+        "y": 411,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "enemy-4",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 1723,
+        "y": 435,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "plat-5",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2069,
+        "y": 494,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-5",
+        "frameName": "collectible-coin",
+        "x": 2069,
+        "y": 414,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-5",
+        "frameName": "hazard-spike-strip",
+        "x": 2069,
+        "y": 484,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-5",
+        "frameName": "platform-floating-ledge",
+        "x": 2069,
+        "y": 370,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-6",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2419,
+        "y": 516,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-6",
+        "frameName": "collectible-coin",
+        "x": 2419,
+        "y": 436,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-6",
+        "frameName": "hazard-spike-strip",
+        "x": 2419,
+        "y": 506,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-6",
+        "frameName": "platform-floating-ledge",
+        "x": 2419,
+        "y": 380,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-7",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2746,
+        "y": 537,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-7",
+        "frameName": "collectible-coin",
+        "x": 2746,
+        "y": 457,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-7",
+        "frameName": "hazard-spike-strip",
+        "x": 2746,
+        "y": 527,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-7",
+        "frameName": "platform-floating-ledge",
+        "x": 2746,
+        "y": 414,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-8",
+        "frameName": "platform-medium-grass-stone",
+        "x": 3092,
+        "y": 531,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-8",
+        "frameName": "collectible-coin",
+        "x": 3092,
+        "y": 451,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-9",
+        "frameName": "platform-medium-grass-stone",
+        "x": 3435,
+        "y": 540,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "hazard-9",
+        "frameName": "hazard-spike-strip",
+        "x": 3435,
+        "y": 530,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-9",
+        "frameName": "platform-floating-ledge",
+        "x": 3435,
+        "y": 414,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-10",
+        "frameName": "platform-medium-grass-stone",
+        "x": 3796,
+        "y": 555,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-10",
+        "frameName": "collectible-coin",
+        "x": 3796,
+        "y": 475,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "enemy-10",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 3796,
+        "y": 499,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "plat-11",
+        "frameName": "platform-short-grass-stone",
+        "x": 4082,
+        "y": 545,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-11",
+        "frameName": "collectible-coin",
+        "x": 4082,
+        "y": 465,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-12",
+        "frameName": "platform-medium-grass-stone",
+        "x": 4389,
+        "y": 511,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-12",
+        "frameName": "collectible-coin",
+        "x": 4389,
+        "y": 431,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-12",
+        "frameName": "hazard-spike-strip",
+        "x": 4389,
+        "y": 501,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-12",
+        "frameName": "platform-floating-ledge",
+        "x": 4389,
+        "y": 383,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-13",
+        "frameName": "platform-medium-grass-stone",
+        "x": 4750,
+        "y": 478,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "end-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 5157,
+        "y": 478,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "exit-portal",
+        "frameName": "portal-exit-complete",
+        "x": 5257,
+        "y": 418,
+        "scale": 0.727,
+        "depth": 12
+      }
+    ]
+  }
+}

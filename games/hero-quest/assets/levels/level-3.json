@@ -4,13 +4,13 @@
   "level": {
     "version": 1,
     "id": "level-3",
-    "title": "Orc Gate",
-    "width": 2800,
+    "title": "Stage 3: Orc Territory",
+    "width": 1600,
     "height": 720,
     "bounds": {
       "x": 0,
       "y": 0,
-      "width": 2800,
+      "width": 1600,
       "height": 720
     },
     "playerStart": {
@@ -19,188 +19,92 @@
     },
     "objects": [
       {
-        "id": "ground-1",
+        "id": "start-platform",
         "frameName": "platform-long-grass-stone",
-        "x": 286,
+        "x": 300,
         "y": 564,
-        "scale": 0.7272727272727273,
+        "scale": 0.727,
         "depth": 10
       },
       {
-        "id": "ground-2",
+        "id": "plat-1",
         "frameName": "platform-medium-grass-stone",
-        "x": 700,
-        "y": 564,
-        "scale": 0.7272727272727273,
+        "x": 681,
+        "y": 534,
+        "scale": 0.727,
         "depth": 10
       },
       {
-        "id": "ground-3",
-        "frameName": "platform-long-grass-stone",
-        "x": 1030,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
+        "id": "hazard-1",
+        "frameName": "hazard-spike-strip",
+        "x": 681,
+        "y": 524,
+        "scale": 0.727,
+        "depth": 15
       },
       {
-        "id": "ground-4",
-        "frameName": "platform-medium-grass-stone",
-        "x": 1450,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-5",
-        "frameName": "platform-long-grass-stone",
-        "x": 1810,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-6",
-        "frameName": "platform-medium-grass-stone",
-        "x": 2250,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-7",
-        "frameName": "platform-long-grass-stone",
-        "x": 2600,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "pillar-1",
-        "frameName": "platform-two-by-two-pillar",
-        "x": 620,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "step-1",
-        "frameName": "platform-short-grass-stone",
-        "x": 820,
-        "y": 431,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "step-2",
+        "id": "safe-ledge-1",
         "frameName": "platform-floating-ledge",
-        "x": 1100,
-        "y": 472,
-        "scale": 0.7272727272727273,
+        "x": 681,
+        "y": 398,
+        "scale": 0.727,
         "depth": 10
       },
       {
-        "id": "step-3",
+        "id": "plat-2",
         "frameName": "platform-medium-grass-stone",
-        "x": 1960,
-        "y": 441,
-        "scale": 0.7272727272727273,
+        "x": 956,
+        "y": 552,
+        "scale": 0.727,
         "depth": 10
-      },
-      {
-        "id": "coin-1",
-        "frameName": "collectible-coin",
-        "x": 620,
-        "y": 369,
-        "scale": 0.7272727272727273,
-        "depth": 24
       },
       {
         "id": "coin-2",
         "frameName": "collectible-coin",
-        "x": 820,
-        "y": 314,
-        "scale": 0.7272727272727273,
+        "x": 956,
+        "y": 472,
+        "scale": 0.727,
         "depth": 24
       },
       {
-        "id": "coin-3",
-        "frameName": "collectible-coin",
-        "x": 1100,
-        "y": 344,
-        "scale": 0.7272727272727273,
-        "depth": 24
-      },
-      {
-        "id": "coin-4",
-        "frameName": "collectible-coin",
-        "x": 1960,
-        "y": 324,
-        "scale": 0.7272727272727273,
-        "depth": 24
-      },
-      {
-        "id": "coin-5",
-        "frameName": "collectible-coin",
-        "x": 2600,
-        "y": 446,
-        "scale": 0.7272727272727273,
-        "depth": 24
-      },
-      {
-        "id": "spike-strip-1",
+        "id": "hazard-2",
         "frameName": "hazard-spike-strip",
-        "x": 1320,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 18
+        "x": 956,
+        "y": 542,
+        "scale": 0.727,
+        "depth": 15
       },
       {
-        "id": "spike-strip-2",
-        "frameName": "hazard-spike-strip",
-        "x": 2120,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 18
+        "id": "safe-ledge-2",
+        "frameName": "platform-floating-ledge",
+        "x": 956,
+        "y": 430,
+        "scale": 0.727,
+        "depth": 10
       },
       {
-        "id": "purple-orc",
+        "id": "enemy-2",
         "frameName": "enemy-v3-purple-orc",
-        "x": 2380,
-        "y": 512,
-        "scale": 0.7024390243902439,
-        "depth": 22
+        "x": 956,
+        "y": 496,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "end-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 1357,
+        "y": 552,
+        "scale": 0.727,
+        "depth": 10
       },
       {
         "id": "exit-portal",
         "frameName": "portal-exit-complete",
-        "x": 2660,
-        "y": 503,
-        "scale": 0.7272727272727273,
+        "x": 1457,
+        "y": 492,
+        "scale": 0.727,
         "depth": 12
-      },
-      {
-        "id": "bush-1",
-        "frameName": "prop-bush-clump",
-        "x": 360,
-        "y": 506,
-        "scale": 0.7272727272727273,
-        "depth": 16
-      },
-      {
-        "id": "grass-1",
-        "frameName": "prop-grass-tuft",
-        "x": 1760,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 16
-      },
-      {
-        "id": "flower-1",
-        "frameName": "prop-flower",
-        "x": 2520,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 16
       }
     ]
   }

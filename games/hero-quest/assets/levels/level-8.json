@@ -4,13 +4,13 @@
   "level": {
     "version": 1,
     "id": "level-8",
-    "title": "Sky Coins",
-    "width": 4350,
+    "title": "Stage 8: Spike Path",
+    "width": 3200,
     "height": 720,
     "bounds": {
       "x": 0,
       "y": 0,
-      "width": 4350,
+      "width": 3200,
       "height": 720
     },
     "playerStart": {
@@ -19,244 +19,164 @@
     },
     "objects": [
       {
-        "id": "ground-1",
+        "id": "start-platform",
         "frameName": "platform-long-grass-stone",
-        "x": 286,
+        "x": 300,
         "y": 564,
-        "scale": 0.7272727272727273,
+        "scale": 0.727,
         "depth": 10
       },
       {
-        "id": "ground-2",
+        "id": "plat-1",
         "frameName": "platform-medium-grass-stone",
-        "x": 720,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-3",
-        "frameName": "platform-long-grass-stone",
-        "x": 1080,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-4",
-        "frameName": "platform-medium-grass-stone",
-        "x": 1510,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-5",
-        "frameName": "platform-long-grass-stone",
-        "x": 1870,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-6",
-        "frameName": "platform-medium-grass-stone",
-        "x": 2300,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-7",
-        "frameName": "platform-long-grass-stone",
-        "x": 2660,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-8",
-        "frameName": "platform-medium-grass-stone",
-        "x": 3090,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-9",
-        "frameName": "platform-long-grass-stone",
-        "x": 3450,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-10",
-        "frameName": "platform-medium-grass-stone",
-        "x": 3860,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-11",
-        "frameName": "platform-long-grass-stone",
-        "x": 4150,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "sky-1",
-        "frameName": "platform-floating-ledge",
-        "x": 620,
-        "y": 472,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "sky-2",
-        "frameName": "platform-short-grass-stone",
-        "x": 760,
-        "y": 406,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "sky-3",
-        "frameName": "platform-floating-ledge",
-        "x": 920,
-        "y": 367,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "sky-4",
-        "frameName": "platform-medium-grass-stone",
-        "x": 1120,
-        "y": 411,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "sky-5",
-        "frameName": "platform-floating-ledge",
-        "x": 2520,
-        "y": 457,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "sky-6",
-        "frameName": "platform-short-grass-stone",
-        "x": 2690,
-        "y": 396,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "sky-7",
-        "frameName": "platform-floating-ledge",
-        "x": 2880,
-        "y": 457,
-        "scale": 0.7272727272727273,
+        "x": 723,
+        "y": 529,
+        "scale": 0.727,
         "depth": 10
       },
       {
         "id": "coin-1",
         "frameName": "collectible-coin",
-        "x": 620,
-        "y": 344,
-        "scale": 0.7272727272727273,
+        "x": 723,
+        "y": 449,
+        "scale": 0.727,
         "depth": 24
+      },
+      {
+        "id": "hazard-1",
+        "frameName": "hazard-spike-strip",
+        "x": 723,
+        "y": 519,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-1",
+        "frameName": "platform-floating-ledge",
+        "x": 723,
+        "y": 406,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-2",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1019,
+        "y": 547,
+        "scale": 0.727,
+        "depth": 10
       },
       {
         "id": "coin-2",
         "frameName": "collectible-coin",
-        "x": 760,
-        "y": 289,
-        "scale": 0.7272727272727273,
+        "x": 1019,
+        "y": 467,
+        "scale": 0.727,
         "depth": 24
+      },
+      {
+        "id": "plat-3",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1331,
+        "y": 567,
+        "scale": 0.727,
+        "depth": 10
       },
       {
         "id": "coin-3",
         "frameName": "collectible-coin",
-        "x": 920,
-        "y": 239,
-        "scale": 0.7272727272727273,
+        "x": 1331,
+        "y": 487,
+        "scale": 0.727,
         "depth": 24
+      },
+      {
+        "id": "hazard-3",
+        "frameName": "hazard-spike-strip",
+        "x": 1331,
+        "y": 557,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-3",
+        "frameName": "platform-floating-ledge",
+        "x": 1331,
+        "y": 445,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-4",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1615,
+        "y": 558,
+        "scale": 0.727,
+        "depth": 10
       },
       {
         "id": "coin-4",
         "frameName": "collectible-coin",
-        "x": 1120,
-        "y": 294,
-        "scale": 0.7272727272727273,
+        "x": 1615,
+        "y": 478,
+        "scale": 0.727,
         "depth": 24
+      },
+      {
+        "id": "plat-5",
+        "frameName": "platform-short-grass-stone",
+        "x": 1887,
+        "y": 568,
+        "scale": 0.727,
+        "depth": 10
       },
       {
         "id": "coin-5",
         "frameName": "collectible-coin",
-        "x": 2520,
-        "y": 329,
-        "scale": 0.7272727272727273,
+        "x": 1887,
+        "y": 488,
+        "scale": 0.727,
         "depth": 24
+      },
+      {
+        "id": "plat-6",
+        "frameName": "platform-short-grass-stone",
+        "x": 2103,
+        "y": 535,
+        "scale": 0.727,
+        "depth": 10
       },
       {
         "id": "coin-6",
         "frameName": "collectible-coin",
-        "x": 2690,
-        "y": 279,
-        "scale": 0.7272727272727273,
+        "x": 2103,
+        "y": 455,
+        "scale": 0.727,
         "depth": 24
       },
       {
-        "id": "coin-7",
-        "frameName": "collectible-coin",
-        "x": 2880,
-        "y": 329,
-        "scale": 0.7272727272727273,
-        "depth": 24
+        "id": "plat-7",
+        "frameName": "platform-short-grass-stone",
+        "x": 2348,
+        "y": 509,
+        "scale": 0.727,
+        "depth": 10
       },
       {
-        "id": "spike-1",
-        "frameName": "hazard-spike-strip",
-        "x": 1280,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 18
-      },
-      {
-        "id": "spike-2",
-        "frameName": "hazard-spike-strip",
-        "x": 3140,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 18
-      },
-      {
-        "id": "orc-1",
-        "frameName": "enemy-v3-purple-orc",
-        "x": 2440,
-        "y": 512,
-        "scale": 0.7024390243902439,
-        "depth": 22
+        "id": "end-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 2695,
+        "y": 509,
+        "scale": 0.727,
+        "depth": 10
       },
       {
         "id": "exit-portal",
         "frameName": "portal-exit-complete",
-        "x": 4150,
-        "y": 503,
-        "scale": 0.7272727272727273,
+        "x": 2795,
+        "y": 449,
+        "scale": 0.727,
         "depth": 12
-      },
-      {
-        "id": "bush-1",
-        "frameName": "prop-bush-clump",
-        "x": 4040,
-        "y": 506,
-        "scale": 0.7272727272727273,
-        "depth": 16
       }
     ]
   }

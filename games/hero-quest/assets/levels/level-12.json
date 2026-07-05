@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "savedAt": "2026-07-05T00:00:00.000Z",
+  "level": {
+    "version": 1,
+    "id": "level-12",
+    "title": "Stage 12: Orc Territory",
+    "width": 4000,
+    "height": 720,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 4000,
+      "height": 720
+    },
+    "playerStart": {
+      "x": 142,
+      "y": 368
+    },
+    "objects": [
+      {
+        "id": "start-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 300,
+        "y": 564,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-1",
+        "frameName": "platform-medium-grass-stone",
+        "x": 710,
+        "y": 559,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-1",
+        "frameName": "collectible-coin",
+        "x": 710,
+        "y": 479,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-2",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1022,
+        "y": 573,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-2",
+        "frameName": "collectible-coin",
+        "x": 1022,
+        "y": 493,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-3",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1357,
+        "y": 550,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "hazard-3",
+        "frameName": "hazard-spike-strip",
+        "x": 1357,
+        "y": 540,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-3",
+        "frameName": "platform-floating-ledge",
+        "x": 1357,
+        "y": 411,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-4",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1698,
+        "y": 522,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-4",
+        "frameName": "collectible-coin",
+        "x": 1698,
+        "y": 442,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-4",
+        "frameName": "hazard-spike-strip",
+        "x": 1698,
+        "y": 512,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-4",
+        "frameName": "platform-floating-ledge",
+        "x": 1698,
+        "y": 385,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-5",
+        "frameName": "platform-short-grass-stone",
+        "x": 1997,
+        "y": 491,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-6",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2271,
+        "y": 506,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-6",
+        "frameName": "collectible-coin",
+        "x": 2271,
+        "y": 426,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-7",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2574,
+        "y": 525,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-7",
+        "frameName": "collectible-coin",
+        "x": 2574,
+        "y": 445,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-8",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2882,
+        "y": 502,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-8",
+        "frameName": "collectible-coin",
+        "x": 2882,
+        "y": 422,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-9",
+        "frameName": "platform-short-grass-stone",
+        "x": 3169,
+        "y": 475,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "enemy-4",
+        "frameName": "enemy-v3-purple-orc",
+        "x": 1698,
+        "y": 466,
+        "scale": 1,
+        "depth": 20
+      },
+      {
+        "id": "end-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 3518,
+        "y": 475,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "exit-portal",
+        "frameName": "portal-exit-complete",
+        "x": 3618,
+        "y": 415,
+        "scale": 0.727,
+        "depth": 12
+      }
+    ]
+  }
+}

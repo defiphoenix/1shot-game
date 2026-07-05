@@ -3,53 +3,93 @@
   "levels": [
     {
       "id": "level-1",
-      "title": "Coin And Gate",
+      "title": "Stage 1: Basic Route",
       "url": "/assets/levels/level-1.json"
     },
     {
       "id": "level-2",
-      "title": "High Road",
+      "title": "Stage 2: Spike Path",
       "url": "/assets/levels/level-2.json"
     },
     {
       "id": "level-3",
-      "title": "Orc Gate",
+      "title": "Stage 3: Orc Territory",
       "url": "/assets/levels/level-3.json"
     },
     {
       "id": "level-4",
-      "title": "Broken Steps",
+      "title": "Stage 4: Basic Route",
       "url": "/assets/levels/level-4.json"
     },
     {
       "id": "level-5",
-      "title": "Spike Garden",
+      "title": "Stage 5: Spike Path",
       "url": "/assets/levels/level-5.json"
     },
     {
       "id": "level-6",
-      "title": "Pillar Run",
+      "title": "Stage 6: Orc Territory",
       "url": "/assets/levels/level-6.json"
     },
     {
       "id": "level-7",
-      "title": "Orc Patrol",
+      "title": "Stage 7: Basic Route",
       "url": "/assets/levels/level-7.json"
     },
     {
       "id": "level-8",
-      "title": "Sky Coins",
+      "title": "Stage 8: Spike Path",
       "url": "/assets/levels/level-8.json"
     },
     {
       "id": "level-9",
-      "title": "Hazard Gauntlet",
+      "title": "Stage 9: Orc Territory",
       "url": "/assets/levels/level-9.json"
     },
     {
       "id": "level-10",
-      "title": "Final Gate",
+      "title": "Stage 10: Basic Route",
       "url": "/assets/levels/level-10.json"
+    },
+    {
+      "id": "level-11",
+      "title": "Stage 11: Spike Path",
+      "url": "/assets/levels/level-11.json"
+    },
+    {
+      "id": "level-12",
+      "title": "Stage 12: Orc Territory",
+      "url": "/assets/levels/level-12.json"
+    },
+    {
+      "id": "level-13",
+      "title": "Stage 13: Basic Route",
+      "url": "/assets/levels/level-13.json"
+    },
+    {
+      "id": "level-14",
+      "title": "Stage 14: Spike Path",
+      "url": "/assets/levels/level-14.json"
+    },
+    {
+      "id": "level-15",
+      "title": "Stage 15: Orc Territory",
+      "url": "/assets/levels/level-15.json"
+    },
+    {
+      "id": "level-16",
+      "title": "Stage 16: Basic Route",
+      "url": "/assets/levels/level-16.json"
+    },
+    {
+      "id": "level-17",
+      "title": "Stage 17: Spike Path",
+      "url": "/assets/levels/level-17.json"
+    },
+    {
+      "id": "level-18",
+      "title": "Stage 18: Orc Territory",
+      "url": "/assets/levels/level-18.json"
     }
   ]
 }

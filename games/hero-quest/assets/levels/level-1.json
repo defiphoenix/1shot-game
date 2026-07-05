@@ -4,13 +4,13 @@
   "level": {
     "version": 1,
     "id": "level-1",
-    "title": "Coin And Gate",
-    "width": 1280,
+    "title": "Stage 1: Basic Route",
+    "width": 1600,
     "height": 720,
     "bounds": {
       "x": 0,
       "y": 0,
-      "width": 1280,
+      "width": 1600,
       "height": 720
     },
     "playerStart": {
@@ -19,68 +19,60 @@
     },
     "objects": [
       {
-        "id": "ground-left",
+        "id": "start-platform",
         "frameName": "platform-long-grass-stone",
-        "x": 286,
+        "x": 300,
         "y": 564,
-        "scale": 0.7272727272727273,
+        "scale": 0.727,
         "depth": 10
       },
       {
-        "id": "ground-mid",
-        "frameName": "platform-medium-grass-stone",
-        "x": 700,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 10
-      },
-      {
-        "id": "ground-right",
-        "frameName": "platform-long-grass-stone",
-        "x": 1010,
-        "y": 564,
-        "scale": 0.7272727272727273,
+        "id": "plat-1",
+        "frameName": "platform-short-grass-stone",
+        "x": 652,
+        "y": 566,
+        "scale": 0.727,
         "depth": 10
       },
       {
         "id": "coin-1",
         "frameName": "collectible-coin",
-        "x": 590,
-        "y": 446,
-        "scale": 0.7272727272727273,
+        "x": 652,
+        "y": 486,
+        "scale": 0.727,
         "depth": 24
+      },
+      {
+        "id": "plat-2",
+        "frameName": "platform-medium-grass-stone",
+        "x": 925,
+        "y": 533,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-2",
+        "frameName": "collectible-coin",
+        "x": 925,
+        "y": 453,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "end-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 1310,
+        "y": 533,
+        "scale": 0.727,
+        "depth": 10
       },
       {
         "id": "exit-portal",
         "frameName": "portal-exit-complete",
-        "x": 1120,
-        "y": 503,
-        "scale": 0.7272727272727273,
+        "x": 1410,
+        "y": 473,
+        "scale": 0.727,
         "depth": 12
-      },
-      {
-        "id": "grass-tuft",
-        "frameName": "prop-grass-tuft",
-        "x": 360,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 16
-      },
-      {
-        "id": "flower",
-        "frameName": "prop-flower",
-        "x": 760,
-        "y": 564,
-        "scale": 0.7272727272727273,
-        "depth": 16
-      },
-      {
-        "id": "bush",
-        "frameName": "prop-bush-clump",
-        "x": 980,
-        "y": 506,
-        "scale": 0.7272727272727273,
-        "depth": 16
       }
     ]
   }

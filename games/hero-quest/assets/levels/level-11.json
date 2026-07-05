@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "savedAt": "2026-07-05T00:00:00.000Z",
+  "level": {
+    "version": 1,
+    "id": "level-11",
+    "title": "Stage 11: Spike Path",
+    "width": 4000,
+    "height": 720,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 4000,
+      "height": 720
+    },
+    "playerStart": {
+      "x": 142,
+      "y": 368
+    },
+    "objects": [
+      {
+        "id": "start-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 300,
+        "y": 564,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-1",
+        "frameName": "platform-short-grass-stone",
+        "x": 657,
+        "y": 554,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-1",
+        "frameName": "collectible-coin",
+        "x": 657,
+        "y": 474,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-2",
+        "frameName": "platform-medium-grass-stone",
+        "x": 944,
+        "y": 528,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-2",
+        "frameName": "collectible-coin",
+        "x": 944,
+        "y": 448,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-3",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1263,
+        "y": 510,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-3",
+        "frameName": "collectible-coin",
+        "x": 1263,
+        "y": 430,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-3",
+        "frameName": "hazard-spike-strip",
+        "x": 1263,
+        "y": 500,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-3",
+        "frameName": "platform-floating-ledge",
+        "x": 1263,
+        "y": 372,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-4",
+        "frameName": "platform-short-grass-stone",
+        "x": 1534,
+        "y": 488,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-4",
+        "frameName": "collectible-coin",
+        "x": 1534,
+        "y": 408,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-5",
+        "frameName": "platform-medium-grass-stone",
+        "x": 1824,
+        "y": 509,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-5",
+        "frameName": "collectible-coin",
+        "x": 1824,
+        "y": 429,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-5",
+        "frameName": "hazard-spike-strip",
+        "x": 1824,
+        "y": 499,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-5",
+        "frameName": "platform-floating-ledge",
+        "x": 1824,
+        "y": 377,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-6",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2154,
+        "y": 504,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-6",
+        "frameName": "collectible-coin",
+        "x": 2154,
+        "y": 424,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-6",
+        "frameName": "hazard-spike-strip",
+        "x": 2154,
+        "y": 494,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-6",
+        "frameName": "platform-floating-ledge",
+        "x": 2154,
+        "y": 364,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-7",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2464,
+        "y": 490,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "hazard-7",
+        "frameName": "hazard-spike-strip",
+        "x": 2464,
+        "y": 480,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-7",
+        "frameName": "platform-floating-ledge",
+        "x": 2464,
+        "y": 367,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-8",
+        "frameName": "platform-medium-grass-stone",
+        "x": 2773,
+        "y": 473,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-8",
+        "frameName": "collectible-coin",
+        "x": 2773,
+        "y": 393,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "hazard-8",
+        "frameName": "hazard-spike-strip",
+        "x": 2773,
+        "y": 463,
+        "scale": 0.727,
+        "depth": 15
+      },
+      {
+        "id": "safe-ledge-8",
+        "frameName": "platform-floating-ledge",
+        "x": 2773,
+        "y": 342,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "plat-9",
+        "frameName": "platform-medium-grass-stone",
+        "x": 3092,
+        "y": 438,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-9",
+        "frameName": "collectible-coin",
+        "x": 3092,
+        "y": 358,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "plat-10",
+        "frameName": "platform-medium-grass-stone",
+        "x": 3420,
+        "y": 420,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "coin-10",
+        "frameName": "collectible-coin",
+        "x": 3420,
+        "y": 340,
+        "scale": 0.727,
+        "depth": 24
+      },
+      {
+        "id": "end-platform",
+        "frameName": "platform-long-grass-stone",
+        "x": 3834,
+        "y": 420,
+        "scale": 0.727,
+        "depth": 10
+      },
+      {
+        "id": "exit-portal",
+        "frameName": "portal-exit-complete",
+        "x": 3934,
+        "y": 360,
+        "scale": 0.727,
+        "depth": 12
+      }
+    ]
+  }
+}
